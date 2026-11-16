@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        let number;
+        do
+        {
+            number = prompt("Enter here numbers before 6", 6);
+            if(number == null);
+            {
+                break;
+            }
+            if (number.length !== 6 || isNaN(number))
+            {
+                alert("Error! Try again!");
+            }
+            else
+            {
+                break;
+            }
+        }
+        while (true);
+        if (number !== null)
+        {
+            let d1 = parseInt(number[0]);
+            let d2 = parseInt(number[1]);
+            let d3 = parseInt(number[2]);
+            let d4 = parseInt(number[3]);
+            let d5 = parseInt(number[4]);
+            let d6 = parseInt(number[5]);
+
+            let sumFirst = d1 + d2 + d3;
+            let sumLast = d4 + d5 + d6;
+            if (sumFirst === sumLast)
+            {
+                alert("U got the lucky number! Summ: " + sumFirst + " = " + sumLast);
+            }
+            else
+            {
+                alert("Ordinary ticket and count: " + sumFirst + ", last: " + sumLast);
+            }
+        }
+    </script>
+</body>
+</html>

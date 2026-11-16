@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        let fio;
+        let gender;
+        let age;
+        let email;
+        do
+        {
+            fio = parseInt(prompt("How ur name?..."));
+            gender = parseInt(prompt("What is ya geneder..."));
+            age = parseInt(prompt("Okey and, How old are u?..."));
+            email = parseInt(prompt("And ur gender?..."));
+            Comfirmed = confirm("fio: " + fio + "\n" + "gender: " + gender + "\n" +"age: " + age + "\n" +"E-mail: " + email + "\n\n" +"Is everything ok??");
+        }
+        while(!Comfirmed("Continiu?..."));
+        alert("Thank u for ur information!")
+    </script>
+</body>
+</html>
